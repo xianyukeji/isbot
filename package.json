@@ -1,10 +1,13 @@
 {
   "name": "isbot",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "detects bots/crawlers/spiders via the user agent.",
-  "main": "index.js",
+  "main": "dist/index.common.js",
+  "module": "dist/index.esm.js",
+  "unpkg": "dist/index.js",
   "scripts": {
-    "test": "mocha test.js"
+    "test": "mocha test.js",
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
@@ -25,7 +28,12 @@
   "homepage": "https://github.com/gorangajic/isbot",
   "devDependencies": {
     "chai": "^3.2.0",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.1",
     "mocha": "^2.2.5",
+    "rollup": "^0.66.2",
+    "rollup-plugin-commonjs": "^9.1.8",
     "should": "^7.0.2"
   }
 }
