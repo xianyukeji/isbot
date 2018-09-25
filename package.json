@@ -1,5 +1,5 @@
 {
-  "name": "isbot",
+  "name": "@xianyukeji/isbot",
   "version": "2.3.0",
   "description": "detects bots/crawlers/spiders via the user agent.",
   "main": "dist/index.common.js",
